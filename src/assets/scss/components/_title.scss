@@ -1,0 +1,38 @@
+.Title {
+  height:135px;
+  background: #f3f3f3;
+  
+  &--left, &--right {
+    height: 100%;
+    border-left: 0.5px solid #d0d0d0;
+    position: relative;
+    height: 200px;
+
+    h1 {
+      font-family: $RobotoCondensed;
+      font-size: 190px;
+      font-style: italic;
+      color: $orange;
+      font-weight: 700;
+      line-height: 200px;
+      margin-left: 70px;
+
+      span {
+        color: $grey;
+      }
+    }
+
+    .drone {
+      background: url('/assets/img/product_sm.png') 0 0 no-repeat;
+      width: 565px;
+      height: 271px;
+      position: absolute;
+      top: -50px;
+      left: -135px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -2,3 +2,20 @@
 
 $Roboto: 'Roboto', sans-serif;
 $RobotoCondensed: 'Roboto Condensed', sans-serif;
+
+$orange: #F18228;
+$grey: #6a6a6a;
+
+h1 {
+	font-family: $RobotoCondensed;
+	font-size: 190px;
+	font-style: italic;
+	color: $orange;
+	font-weight: 700;
+	line-height: 250px;
+	margin-left: 70px;
+
+	span {
+		color: $grey;
+	}
+}
