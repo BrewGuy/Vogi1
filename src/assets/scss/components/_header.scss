@@ -1,0 +1,10 @@
+.Header {
+  background:url('/assets/img/bg_top.jpg') 0 0 no-repeat;
+  background-size: cover;
+  height: 355px;  
+
+  &--left, &--right {
+    height: 100%;
+    border-left: 0.5px solid #d0d0d0;
+  }
+}
