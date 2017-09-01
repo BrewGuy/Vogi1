@@ -1,21 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,700');
 
 $Roboto: 'Roboto', sans-serif;
 $RobotoCondensed: 'Roboto Condensed', sans-serif;
 
+$black: #000000;
+$white: #ffffff;
 $orange: #F18228;
 $grey: #6a6a6a;
-
-h1 {
-	font-family: $RobotoCondensed;
-	font-size: 190px;
-	font-style: italic;
-	color: $orange;
-	font-weight: 700;
-	line-height: 250px;
-	margin-left: 70px;
-
-	span {
-		color: $grey;
-	}
-}
+$dark-grey: #4e4e4e;

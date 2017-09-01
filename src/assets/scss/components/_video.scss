@@ -1,0 +1,57 @@
+.Video {
+  a.video {
+    width: 100%;
+    display: block;
+    background-color: $orange;
+    background-image: url('/assets/img/icon_video_0.png');
+    background-position: 10px;
+    background-repeat: no-repeat;
+    border: 3px solid $orange;
+    padding: 10px 30px 5px 75px;
+    font-family: $RobotoCondensed;
+    font-style: italic;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 300;
+    line-height: 32px;
+  }
+
+  .video-modal { 
+    border: 1px solid #979797;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      a.video {
+        background-image: url('/assets/img/icon_video_1.png');
+        background-color: $white;
+        color: $orange;
+      }
+    }
+  }
+
+  .text {
+    font-family: $RobotoCondensed;
+    font-size: 17px;
+    line-height: 23px;
+    color: $dark-grey;
+    margin: 20px 20px 20px 15px;
+    width:80%;
+  }
+
+  @include breakpoint (medium down) {
+    max-width: 304px;
+  }
+
+  @include breakpoint (small down) {
+    width: 100%;
+    max-width: none;
+  }
+
+  @include breakpoint (small down) {
+    margin: 0 auto;
+  }
+}

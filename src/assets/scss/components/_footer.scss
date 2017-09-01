@@ -1,0 +1,55 @@
+.Footer {
+  background: #828282;
+  color: $white;
+
+  &--content {
+    padding: 30px 0 30px 80px;
+
+    .email {
+      display: inline;
+      font-size: 16px;
+      line-height: 21px;
+      a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      @include breakpoint (small down) {
+        display: block;
+      }
+    }
+
+    .phone {
+      display: inline;
+
+      @include breakpoint (small down) {
+        display: block;
+      }
+    }
+
+    .patent {
+      display: block;
+      font-size: 13px;
+      line-height: 18px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }  
+
+    span {
+      display: inline;
+      margin: 0 10px;
+
+      @include breakpoint (small down) {
+        display: none;
+      }
+    }
+
+    @include breakpoint (small down) {
+      padding: 20px 10px; 
+    }
+  }
+}

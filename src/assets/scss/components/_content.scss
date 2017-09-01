@@ -1,0 +1,114 @@
+.content {
+
+  padding: 70px 0 50px 100px;
+  font-size: 17px;
+  line-height: 29px;
+
+  h2 {
+    font-family: $RobotoCondensed;
+    font-size: 38px;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 50px;
+
+    @include breakpoint (small down) {
+      margin-left: 1vw;
+    }
+  }
+
+  h3 {
+    font-family: $RobotoCondensed;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .divider {
+    width: 50px;
+    height: 1px;
+    background: #979797;
+    margin: 25px 0 25px 5px;
+
+    @include breakpoint (small down) {
+      width: 100%;
+    }
+  }
+
+  .text {
+    width: 90%;
+    margin-bottom: 20px;
+
+    @include breakpoint (small down) {
+      width: 100%; 
+    }
+  }
+
+  a.geek_button {
+    display: inline-block;
+    background-color: $orange;
+    background-image: url('/assets/img/icon_arrow_white.png');
+    background-position: 10px;
+    background-repeat: no-repeat;
+    border: 3px solid $orange;
+    border-radius: 10px;
+    padding: 5px 30px;
+    font-family: $RobotoCondensed;
+    font-size: 24px;
+    color: $white;
+    font-weight: 300;
+    line-height: 32px;
+
+    &:hover {
+      background-image: url('/assets/img/icon_arrow_orange.png');
+      background-color: $white;
+      color: $grey;
+    }
+  }
+
+  ul {
+    list-style-image: url('/assets/img/icon_arrow_orange.png');
+    margin-top: 20px;
+
+    li {
+      font-family: $RobotoCondensed;
+      font-size: 21px;
+      line-height: 24px;
+      margin-bottom: 10px;
+      a {
+        color: $dark-grey;
+        font-weight: 700;
+        &.normal {
+          font-weight: 400;
+          &:hover {
+            text-decoration: underline;
+          }
+        } 
+
+        span {
+          display: inline-block;
+          border-bottom: 3px solid $white;
+          margin-bottom: 3px;
+
+          &:hover {
+            border-bottom: 3px solid $orange;
+          }
+        }
+      }
+    }
+  }
+
+  .disclaimer {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 30px;
+
+    a {
+      color: $grey;
+      text-decoration: underline;
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}

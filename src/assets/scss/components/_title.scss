@@ -18,21 +18,58 @@
       margin-left: 70px;
 
       span {
-        color: $grey;
+        color: #4f4d4f; 
+      }
+
+      @include breakpoint (medium down) {
+        font-size: 125px;
+      }
+
+      @include breakpoint (small down) {
+        font-size: 80px;
+        margin-left: 1vw;
+        line-height: 110px;
       }
     }
 
     .drone {
       background: url('/assets/img/product_sm.png') 0 0 no-repeat;
-      width: 565px;
-      height: 271px;
+      background-size: 100%;
+      width: 43vw;
+      max-width: 565px;
+      height: 20vw;
       position: absolute;
-      top: -50px;
-      left: -135px;
+      top: -25px;
+      left: -120px;
 
-      img {
-        width: 100%;
+      @include breakpoint (medium down) {
+        width: 40vw;
+        height: 190px;
+        top: -10px;
+        left: -10vw;
+        z-index: 10;
+      }
+
+      @include breakpoint (small down) {
+        display: none;
       }
     }
+  }
+
+  @include breakpoint (medium down) {
+    &--right {
+      border-left: none;
+      border-right: 0.5px solid #d0d0d0;
+    }
+  }
+
+  @include breakpoint (small down) { 
+    &--right {
+      display: none;
+    }
+  }
+
+  @include breakpoint (small down) {
+    height: 75px !important;
   }
 }

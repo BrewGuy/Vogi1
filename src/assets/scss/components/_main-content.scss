@@ -1,0 +1,44 @@
+.MainContent {
+
+  &--left, 
+  &--right {
+    border-left: 0.5px solid #d0d0d0;
+  }
+
+  &--left {
+    .content {
+      padding: 70px 0 50px 100px; 
+
+      @include breakpoint (medium down) {
+        padding: 50px 0 50px 100px;
+      }
+    }
+
+    @include breakpoint (small down) {
+      .content {
+        padding: 20px; 
+      }
+    }    
+  }
+
+  &--right {
+    
+    .Video {
+      padding-top: 150px;
+      margin-right: 20px;
+    }
+    
+  }
+
+  @include breakpoint (medium down) {
+    &--right {
+      border-left: none;
+      border-right: 0.5px solid #d0d0d0;
+    }
+  }
+
+  @include breakpoint (small down) {
+    padding: 0;
+    margin: auto; 
+  }
+}
